@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Internal-JS</title>
+	</head>
+	<body>
+		<p id = "p1">Heyy Hello!!</p>
+		<button id = "b"> Click here to change text</button>
+		<script type="text/javascript">
+			//alert("Heyy");
+			document.getElementById("b").onclick = function(){
+				alert("HEyy");
+				document.getElementById("p1").innerHTML = "Hello Narsiing";
+			}
+			document.getElementById("p1").innerHTML = "Hello Rao";
+		</script>
+	
+	</body>
+</html>

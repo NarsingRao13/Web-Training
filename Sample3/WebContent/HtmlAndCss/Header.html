@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Header</title>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Noto Serif' rel='stylesheet'>
+		<script src="https://use.fontawesome.com/3c260f3a8a.js"></script>
+		
+		
+		<style type="text/css">
+			body{
+				margin: 0px;
+				padding: 0px;
+				// background-color: #f7f7f7;
+			}
+			
+			#headerpart{
+				background-color: #f7f7f7;
+			}
+			
+			
+			.headers{
+				margin-left: 30px; 
+				margin-right: 30px;
+				background-color: #f7f7f7;
+				padding-bottom: 0px;
+			}
+			
+			#header-first-part{
+				padding-bottom: 0px;
+				
+			}
+			#header-second-part{
+				padding-top: 0px;
+				padding-bottom: 10px;
+			}
+			#header-title{
+				//border: 3px solid black;
+				 float: left; 
+				 font-weight:bolder;
+				 font-size: x-large;
+				 background-color: #f7f7f7;
+				 font-family: 'Open Sans';
+			}
+			
+			.header-one-right{
+				//border: 3px solid black; 
+				float: right;
+				 padding: 10px; 
+				 font-size: small;
+				 background-color: #f7f7f7;
+				 font-family: 'Open Sans';
+				 cursor: pointer;
+			}
+			
+			.header-two-right{
+				float: right;
+				padding:10px;
+				padding-right: 25px;
+				padding-left: 25px;
+				//background-color: #f7f7f7;
+				color: #9169a0;
+			}
+			
+			.header-search{
+				padding: 20px;
+				width: 200px;
+				
+			}
+			
+			
+			input[type=text] {
+				  width: 30%;
+				  box-sizing: border-box;
+				  border: 2px solid #ccc;
+				  border-radius: 4px;
+				  font-size: 16px;
+				  background-color: white;
+				  background-image: url('searchicon.png');
+				  background-position: 10px 10px; 
+				  background-repeat: no-repeat;
+				  padding: 12px 20px 12px 40px;
+				  -webkit-transition: width 0.4s ease-in-out;
+				  transition: width 0.4s ease-in-out;
+				}
+				
+				.header-vertical-line{
+					float: right;
+				  	border-left: 1px solid #9169a0;
+				 	height: 55px;
+				  	padding-top: 0px;
+				  	margin-bottom: 5px;
+				}
+				
+				#header-third-part{
+					background-color: #9169a0;
+					//border: 5px solid black;
+					height: 70px;
+					font-size: 15px;
+					font-style: normal;
+				}
+				
+				.header-last-left{
+					float:left;
+					padding-right: 20px;
+					color: white;
+					padding-top: 5px;
+				}
+				
+				#header-third-part-inner{
+					margin-left: 30px; 
+					margin-right: 30px;
+					padding: 20px;
+					padding-left: 0px;
+					font-family: 'Open Sans';
+				}
+				
+				.container{
+					clear: both;
+					margin: 0px;
+					padding: 0px;
+					display: none;
+				}
+				
+				table, tr, td{
+					//width: 100%;
+  					background-color: #7e4a92;
+					border: 1px solid gray;
+  					//border-collapse: collapse;
+  					color: white;
+ 					text-align: left;
+ 					font-family: 'Open Sans';
+ 					cursor: pointer;
+ 					
+				}
+				
+				td{
+					padding: 30px;
+				}
+				
+				table{
+					 width: 100%;
+					 border:  opx;
+  					border-collapse: collapse;
+				}
+				toggled.{
+				
+				}
+				
+				#account{
+					cursor: pointer;
+					//background-color: blue;
+				}
+				
+				#account:HOVER{
+					background-color: #7e4a92;
+				}
+				
+				
+				
+		</style>
+		
+	</head>
+	<body>
+		
+		<header >
+			<div id="headerpart">
+				<div id="header-first-part" class="headers">
+					<div id="header-title">B<span style="font-size: medium;">2</span>C Acclerator</div>	
+					<div class="header-one-right" >SIGN OUT</div>
+					<div class="header-one-right" id = "account" >MY ACCOUNT</div>	
+					<div class="header-one-right" >WELCOME SAI SRIRAM</div>		
+				</div>
+				<div class="container" style="margin: 0px; padding: 0px;" >
+						<table id="myaccount-details">
+							<tr>
+								<td>Personal Details</td>
+								<td>Email Address</td>
+								<td>Payment Details</td>
+							</tr>
+							<tr>
+								<td>Password</td>
+								<td>Order History</td>
+								<td>Address Book</td>
+							</tr>
+							<tr>
+								<td>Saved Carts</td>
+								<td>Consent Management</td>
+								<td>Close Account</td>
+							</tr>
+							<tr>
+								<td>Support Tickets</td>
+								<td>Returns History</td>
+								<td>Dummey Details</td>
+							</tr>
+						</table>
+					</div>	
+				<hr style="clear: both;">
+				<div id="header-second-part" class = "headers">
+					<input type="text" name="search" placeholder="I'm looking for">
+					<div class="header-two-right" style="padding-right: 0px;padding-bottom: 10px;">
+						<span style="font-size: small;">(21 ITEMS) </span>
+						<span style="font-size: medium; font-weight: bold;">£697.38</span>
+						<sup>
+							<i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+						</sup>
+					</div>
+					<div class = "header-vertical-line"></div>
+					<div class="header-two-right" >
+					<i class="fa fa-list-alt fa-2x" aria-hidden="true"></i></div>
+					<div class = "header-vertical-line"></div>
+					<div class="header-two-right">
+					<i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></div> 
+					<div class = "header-vertical-line"></div>
+				</div>
+				<div id="header-third-part">
+					<div id="header-third-part-inner">
+						<div class="header-last-left">BRANDS</div>
+						<div class="header-last-left" >STREETWEAR</div>
+						<div class="header-last-left" >SNOW</div>
+						<div class="header-last-left" >ACCESSORIES</div>
+						<div class="header-last-left" >YOUTH</div>
+					</div>
+				</div> 
+			</div>		
+		</header>
+		
+		
+		<script>
+			$(document).ready(function(){
+				$("#account").click(function(){
+					$(this).css('background-color', '##7e4a92');//click to change
+					$(".container").slideToggle("slow");
+				});
+			});
+
+
+		</script>
+		
+	</body>
+</html>

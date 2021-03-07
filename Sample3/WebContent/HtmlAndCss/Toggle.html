@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Insert title here</title>
+		
+		<style>
+			.title {
+			  cursor: pointer;
+			}
+			
+			.links {
+			  overflow: hidden;
+			  height: 0px;
+			  -webkit-transition: height 0.3s linear, padding-top 0.3s linear;
+			}
+			
+			.toggled {
+			  height: 50px;
+			}
+				
+		</style>
+		
+	</head>
+	<body>
+	
+		<h2 class="title">CSS slideToggle</h2>
+
+		<div class="links"><p>Toggle this div</p></div>	
+		
+		<script>
+			$(".title, .links").hover(function () {
+				alert("hi");
+				$(".links").toggleClass("toggled");
+				});
+
+		</script>
+		
+		
+	
+	</body>
+</html>
