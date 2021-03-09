@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<input id="in" type="text">
+		<button id = "btn">show</button>
+		<p id="p"></p>
+		
+		<script type="text/javascript">
+			var data = 123.3;
+			//var data = true;
+			//var data = 123.3;
+			document.getElementById("p").innerHTML = data+" "+typeof data;
+			document.getElementById("btn").onclick = function(){
+				
+				data = document.getElementById("in").value;
+				document.getElementById("p").innerHTML = data+" "+typeof data;
+				
+			}
+		</script>
+	</body>
+</html>
