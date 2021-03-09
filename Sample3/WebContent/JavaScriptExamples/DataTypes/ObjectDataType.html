@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var person = {
+			fName : "Karukola",
+			mName : "Narsing",
+			lName : "Rao",
+			above18 : true,
+			age : 22,
+			fullName : function() {
+			    return this.fName + " " + this.mName + " " + this.lName;
+			  }
+		};
+		
+		document.write(person.age+"<br>");
+		document.write(person["above18"]+"<br>");
+		document.write(person.fullName()+"<br>");
+	</script>
+</body>
+</html>

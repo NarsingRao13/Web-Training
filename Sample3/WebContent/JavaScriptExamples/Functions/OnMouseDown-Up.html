@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div onmousedown="mouseDown(this)" onmouseup="mouseUp(this)"
+		style="background-color: #D94A38; width: 90px; height: 20px; padding: 40px;">
+		Click Me</div>
+		
+	<script type="text/javascript">
+		function mouseDown(ob) {
+			ob.style.background = "Red";
+			ob.innerHTML = "Release";
+		}
+		
+		function mouseUp(ob) {
+			ob.style.padding = "30px";
+			ob.innerHTML="Thank You";
+		}
+		</script>>	
+</body>
+</html>

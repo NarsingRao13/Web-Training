@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Control-Statement-Game</title>
+</head>
+<body>
+	<p>
+		<input type="text" placeholder="How many fingers?" id="ip">
+		<button id="btn">Guss?</button>
+	</p>
+	<p id="op"></p>
+</body>
+<script type="text/javascript">
+	document.getElementById("btn").onclick = function() {
+		var num = Math.round(Math.random() * 5);
+		if (document.getElementById("ip").value == num) {
+			document.getElementById("op").innerHTML = "You got it!!";
+		} else if (document.getElementById("ip").value == 0) {
+			alert("You can not enter zero");
+		} else {
+			document.getElementById("op").innerHTML = "You are wrong!! It is "
+					+ num;
+		}
+	}
+</script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>For-Loop</title>
+<style type="text/css">
+p {
+	margin: auto;
+	width: 50%;
+	border: 3px solid green;
+	padding: 10px;
+	font-size: large;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<p id = "p1"> Open Console to view output</p>
+	<script type="text/javascript">
+		var s = "";
+		for(var i=0;i<100;i++){
+			s += i+"\n";
+			console.log(i);
+		}
+		document.getElementsByTagName("p").innerHTML = s;
+		
+		for(i=10; i>=0; i= i-1){
+			   var s;
+			   for(s=0; s<i; s = s+1){
+			    document.write("*");
+			   }
+			   //i want this to print a new line
+			   document.write("<br>");
+
+		}
+		document.createElement("input");
+	</script>
+</body>
+</html>

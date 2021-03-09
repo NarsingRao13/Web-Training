@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div onmouseover="f1(this)" onmouseout="f2(this)"
+		style="background-color: #D94A38; width: 120px; height: 20px; padding: 40px;">
+		Mouse Over Me</div>
+	<h1 onclick="this.innerHTML = 'OOOOOOOOOOhh'">Click on this text!</h1>
+	<script type="text/javascript">
+		function f1(ob) {
+			ob.innerHTML = "Mouse on me";
+		}
+		
+		function f2(ob) {
+			ob.innerHTML = "Mouse out of me"
+		}
+	</script>
+</body>
+</html>
