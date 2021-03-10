@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JQuery-ToggleClass</title>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<style type="text/css">
+	 p {
+    margin: 4px;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  
+  .blue {
+  	color: blue;
+  }
+  
+  .highlight {
+  	background: yellow;
+  }
+</style>
+
+</head>
+<body>
+	<p class="blue">Click to toggle</p>
+	<p class="blue highlight">highlight</p>
+	<p class="blue">on these</p>
+	<p class="blue">paragraphs</p>
+	
+	<script type="text/javascript">
+	$("p").click(function(){
+		$(this).toggleClass("highlight");
+	});
+</script>
+</body>
+</html>
